@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:button="@null"
-            android:background="@mipmap/nav_icon_article_f"/>
+            android:background="@mipmap/nav_icon_article_p"/>
         <RadioButton
             android:id="@+id/radio_btn_forum"
             android:layout_weight="1"

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alls_lv">
+
+    </ListView>
+
+
+    </LinearLayout>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xfdcm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="媳妇当车模"-->
+            <!--android:textColor="#00ff00"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_mrj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="美人记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_lthrg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="论坛红人馆"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_ltjs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="论坛讲师"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_jtxx"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="精挑细选"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xssf"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="现身说法"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_gdzd"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="高端阵地"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_ddc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="电动车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hmc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="汇买车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xcdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="行车点评"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_cjsjy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="超级试驾员"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hwgc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="海外购车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_jdlc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="经典老车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_mzxc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="妹子选车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_yhgc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="优惠购车"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_ycdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="原创大片"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_dpfc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="顶配风采"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_gzyl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="改装有理"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_ycyd"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="养车有道"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_sfzy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="首发阵营"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xczb"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="新车直播"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_lsxt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="历史选题"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_mytd"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="摩友天地"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_myzl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="蜜月之旅"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_tmhl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="甜蜜婚礼"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_sykt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="摄影课堂"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_cyjh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="车友聚会"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_dcbl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="单车部落"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_ztjlb"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="杂谈俱乐部"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hbyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="华北游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xnyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="西南游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_dbyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="东北游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_xbyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="西北游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hzyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="华中游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hnyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="华南游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hdyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="华东游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_gatyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="港澳台游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_hwyj"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="海外游记"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_all_chyz"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/down_line"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="沧海遗珠"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="30dp" />-->
+
+    <!--</LinearLayout>-->
+
+<!--</ScrollView>-->

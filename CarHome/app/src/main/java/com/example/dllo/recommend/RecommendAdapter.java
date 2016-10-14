@@ -1,61 +1,52 @@
 package com.example.dllo.recommend;
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.dllo.carhome.R;
+import com.example.dllo.recommend.other.OtherFragment;
 
 import java.util.ArrayList;
 
 /**
- * Created by dllo on 16/9/19.
+ * Created by dllo on 16/9/21.
  */
-public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.MyViewHolder> {
-    Context mContext;
-    ArrayList<RecommendBean>arrayList = new ArrayList<>();
-    public RecommendAdapter(Context context) {
-        this.mContext = context;
-    }
+public class RecommendAdapter extends FragmentPagerAdapter{
+    ArrayList<Fragment> forumFragments = new ArrayList<>();
+    ArrayList<String>title = new ArrayList<>();
 
-
-
-    public void setArrayList(ArrayList<RecommendBean> arrayList) {
-        this.arrayList = arrayList;
-    }
-
-    @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.recommend_recycler,parent,false);
-        MyViewHolder myViewHolder = new MyViewHolder(view);
-        return myViewHolder;
-    }
-
-    @Override
-    public void onBindViewHolder(RecommendAdapter.MyViewHolder holder, int position) {
-        holder.title.setText(arrayList.get(position).getTitle());
-        holder.time.setText(arrayList.get(position).getTime());
-        holder.image.setImageResource(arrayList.get(position).getPic());
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return arrayList.size();
-    }
-
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView time,title;
-        ImageView image;
-        public MyViewHolder(View itemView) {
-            super(itemView);
-            time = (TextView) itemView.findViewById(R.id.time_recommend);
-            title = (TextView) itemView.findViewById(R.id.title_recommend);
-            image = (ImageView) itemView.findViewById(R.id.iv_recommend);
+    public RecommendAdapter(FragmentManager fm, ArrayList<Fragment> forumFragments) {
+        super(fm);
+        this.forumFragments = forumFragments;
+        String[] strings = new String[]{"推荐","优创+","说客","视频","快报","行情","新闻","评测","导购","用车","技术","文化","改装"};
+        for (int i = 0; i < strings.length; i++) {
+            title.add(strings[i]);
         }
+
+    }
+
+    public void setTitle(ArrayList<String> title) {
+        this.title = title;
+    }
+
+
+    @Override
+    public Fragment getItem(int position) {
+        if (position >= 6){
+            OtherFragment otherFragment = new OtherFragment();
+            return otherFragment.newInstance(position);
+        } else {
+            return forumFragments.get(position);
+        }
+    }
+
+    @Override
+    public int getCount() {
+        return 13;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return title.get(position);
     }
 }

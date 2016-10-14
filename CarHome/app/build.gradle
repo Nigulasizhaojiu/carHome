@@ -24,4 +24,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
     compile 'com.android.support:design:23.3.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile project(':PullToRefresh')
+    compile 'com.youth.banner:banner:1.3.2'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile files('libs/lite-orm-1.9.2.jar')
+    compile files('libs/ShareSDK-Core-2.7.7.jar')
+    compile files('libs/jpush-android-2.1.9.jar')
 }

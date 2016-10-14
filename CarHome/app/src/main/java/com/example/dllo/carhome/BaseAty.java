@@ -5,8 +5,12 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import cn.jpush.android.api.JPushInterface;
+
 /**
- * Created by dllo on 16/9/19.
+ *
+ * Activity 的基类
+ *
  */
 public abstract class BaseAty extends AppCompatActivity {
 
@@ -20,28 +24,39 @@ public abstract class BaseAty extends AppCompatActivity {
 
     /**
      * 设置布局
-     * @return 布局文件的id
+     * @return : 布局文件的id
      */
     protected abstract int setLayout();
 
     /**
-     * 初始化View执行findViewById等操作
+     * 初始化View 执行FindViewById等操作
      */
     protected abstract void initView();
 
     /**
-     * 初始化数据,例如拉取网络数据,或者一些逻辑代码
+     *  初始化数据, 例如拉取网络数据, 或者一些逻辑代码
      */
     protected abstract void initData();
 
     /**
-     * 简化findViewById的操作,不需要强转
-     * @param id 组件的id
-     * @param <T>
+     * 简化FindViewById的操作, 不需要强转
+     * @param id : 组件的id
+     * @param <T> :
      * @return
      */
-    protected  <T extends View>T bindView(int id){
-        return (T)findViewById(id);
+    protected <T extends View> T bindView(int id) {
+        return (T) findViewById(id);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        JPushInterface.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        JPushInterface.onPause(this);
     }
 }
-

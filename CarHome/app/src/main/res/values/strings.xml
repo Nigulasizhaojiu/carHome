@@ -1,3 +1,113 @@
 <resources>
     <string name="app_name">CarHome</string>
+    <string-array name="alls">
+        <item>媳妇当车模</item>
+        <item>美人"记"</item>
+        <item>论坛红人馆</item>
+        <item>论坛讲师</item>
+        <item>精挑细选</item>
+        <item>现身说法</item>
+        <item>高端阵地</item>
+        <item>电动车</item>
+        <item>汇买车</item>
+        <item>行车点评</item>
+        <item>超级试驾员</item>
+        <item>海外购车</item>
+        <item>经典老车</item>
+        <item>妹子选车</item>
+        <item>优惠购车</item>
+        <item>原创大片</item>
+        <item>顶配风采</item>
+        <item>改装有理</item>
+        <item>养车有道</item>
+        <item>首发阵营</item>
+        <item>新车直播</item>
+        <item>历史选题</item>
+        <item>摩友天地</item>
+        <item>蜜月之旅</item>
+        <item>甜蜜婚礼</item>
+        <item>摄影课堂</item>
+        <item>车友聚会</item>
+        <item>单车部落</item>
+        <item>杂谈俱乐部</item>
+        <item>华北游记</item>
+        <item>西南游记</item>
+        <item>东北游记</item>
+        <item>西北游记</item>
+        <item>华中游记</item>
+        <item>华南游记</item>
+        <item>华东游记</item>
+        <item>港澳台游记</item>
+        <item>海外游记</item>
+        <item>沧海遗珠</item>
+
+    </string-array>
+
+    <string-array name="urls">
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c104-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c110-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c172-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c230-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c121-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c106-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c118-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c210-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c199-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c198-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c168-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c113-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c109-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c191-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c196-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c107-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c105-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c122-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c194-p1-s30.json
+</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c119-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c112-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c120-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c184-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c108-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c124-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c123-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c185-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c186-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c214-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c218-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c223-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c221-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c222-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c220-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c224-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c219-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c225-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c226-p1-s30.json</item>
+        <item>http://app.api.autohome.com.cn/autov4.8.8/club/jingxuantopic-pm1-c212-p1-s30.json</item>
+
+    </string-array>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
 </resources>

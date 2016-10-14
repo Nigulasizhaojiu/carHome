@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/rv_recommend">
-            </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/yinpin" />
+
+        <ImageView
+            android:id="@+id/iv_find_recommend"
+            android:layout_marginLeft="230dp"
+            android:padding="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/fangdajing" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:layout_marginRight="50dp"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tb_recommend"
+            app:tabMode="scrollable">
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:src="@mipmap/more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_recommend_more"/>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tb_recommend"
+            android:id="@+id/vp_recommend">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
+
+
+
 
 
 </LinearLayout>

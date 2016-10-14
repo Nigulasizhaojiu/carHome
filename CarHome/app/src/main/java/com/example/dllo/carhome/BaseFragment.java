@@ -9,22 +9,24 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by dllo on 16/9/19.
+ *
+ * Fragment 的基类
+ *
  */
 public abstract class BaseFragment extends Fragment {
-    protected Context mContext;
 
+    protected Context mContext;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mContext = context;
+        this.mContext = context;
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(setLayout(),container,false);
+        return inflater.inflate(setLayout(), container, false);
     }
 
     protected abstract int setLayout();
@@ -39,19 +41,17 @@ public abstract class BaseFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         initData();
-
     }
 
     protected abstract void initView();
 
-    protected <T extends View>T bindView(int id){
+    protected <T extends View> T bindView(int id){
         return (T) getView().findViewById(id);
     }
 
-    protected <T extends View>T bindView(int id,View v){
+    protected <T extends View> T bindView(int id, View v){
         return (T) v.findViewById(id);
     }
 
     protected abstract void initData();
-
 }

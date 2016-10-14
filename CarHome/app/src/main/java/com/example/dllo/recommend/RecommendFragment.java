@@ -1,12 +1,23 @@
 package com.example.dllo.recommend;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.content.Intent;
+import android.graphics.Color;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.dllo.carhome.BaseFragment;
-import com.example.dllo.carhome.DividerItemDecoration;
+import com.example.dllo.carhome.FindActivity;
 import com.example.dllo.carhome.R;
+import com.example.dllo.recommend.fastnews.FastNewsFragment;
+import com.example.dllo.recommend.goodcreate.GoodCreatedFragment;
+import com.example.dllo.recommend.market.MarketFragment;
+import com.example.dllo.recommend.other.OtherFragment;
+import com.example.dllo.recommend.recommends.RecommendsFragment;
+import com.example.dllo.recommend.say.SayFragment;
+import com.example.dllo.recommend.tv.TvFragment;
 
 import java.util.ArrayList;
 
@@ -14,8 +25,12 @@ import java.util.ArrayList;
  * Created by dllo on 16/9/19.
  */
 public class RecommendFragment extends BaseFragment {
-    ArrayList<RecommendBean>recommendBeen = new ArrayList<>();
-    private RecyclerView rv;
+
+
+    private ViewPager vp;
+    private TabLayout tb;
+    private ImageView iv;
+    private ImageView ivFind;
 
     @Override
     protected int setLayout() {
@@ -24,37 +39,41 @@ public class RecommendFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        rv = bindView(R.id.rv_recommend);
+        vp = bindView(R.id.vp_recommend);
+        tb = bindView(R.id.tb_recommend);
+        iv = bindView(R.id.iv_recommend_more);
+        ivFind = bindView(R.id.iv_find_recommend);
+
     }
 
     @Override
     protected void initData() {
+        ArrayList<Fragment>fragments = new ArrayList<>();
+        fragments.add(new RecommendsFragment());
+        fragments.add(new GoodCreatedFragment());
+        fragments.add(new SayFragment());
+        fragments.add(new TvFragment());
+        fragments.add(new FastNewsFragment());
+        fragments.add(new MarketFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        fragments.add(new OtherFragment());
+        RecommendAdapter adapter = new RecommendAdapter(getChildFragmentManager(),fragments);
+        vp.setAdapter(adapter);
+        tb.setupWithViewPager(vp);
+        tb.setSelectedTabIndicatorColor(Color.BLACK);
+        tb.setTabTextColors(Color.GRAY,Color.BLACK);
 
-        int[] pic = {R.mipmap.a1,R.mipmap.a2,R.mipmap.a3,R.mipmap.a4};
-        for (int i = 0; i < 10; i++) {
-            RecommendBean bean = new RecommendBean();
-            String title = "标题" + i;
-            String time = "时间" + i;
-
-            bean.setTitle(title);
-            bean.setTime(time);
-            bean.setPic(pic[i%4]);
-
-            recommendBeen.add(bean);
-        }
-        RecommendAdapter adapter = new RecommendAdapter(mContext);
-        for (int i = 0; i < recommendBeen.size(); i++) {
-            Log.d("RecommendFragment", recommendBeen.get(i).getTitle());
-        }
-        adapter.setArrayList(recommendBeen);
-
-
-
-        LinearLayoutManager manager = new LinearLayoutManager(mContext);
-        manager.setOrientation(LinearLayoutManager.VERTICAL);
-        rv.setLayoutManager(manager);
-
-        rv.addItemDecoration(new DividerItemDecoration(mContext,DividerItemDecoration.VERTICAL_LIST));
-        rv.setAdapter(adapter);
+        ivFind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FindActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

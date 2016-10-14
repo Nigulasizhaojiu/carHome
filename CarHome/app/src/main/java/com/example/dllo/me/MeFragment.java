@@ -1,26 +1,37 @@
 package com.example.dllo.me;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.content.Intent;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.ImageButton;
 
+import com.example.dllo.carhome.BaseFragment;
 import com.example.dllo.carhome.R;
 
 /**
  * Created by dllo on 16/9/19.
  */
-public class MeFragment extends Fragment {
-    @Nullable
+public class MeFragment extends BaseFragment {
+
+    private ImageButton btnSet;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return LayoutInflater.from(getContext()).inflate(R.layout.me_fragment,null);
+    protected int setLayout() {
+        return R.layout.me_fragment;
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    protected void initView() {
+        btnSet = bindView(R.id.btn_me_set);
+    }
+
+    @Override
+    protected void initData() {
+        btnSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),SetActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
