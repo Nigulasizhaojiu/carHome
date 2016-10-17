@@ -167,6 +167,7 @@
                 android:textColor="#000"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_data"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="1dp"
@@ -185,9 +186,9 @@
                 />
 
             <TextView
+                android:id="@+id/tv_me_data"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5615646M"/>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

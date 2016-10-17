@@ -38,28 +38,7 @@
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="1dp"
-        android:background="#fff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="个人消息"
-            android:textColor="#000"
-            android:textSize="20dp"
-            />
-        <Switch
-            android:id="@+id/person_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
     <TextView
         android:layout_margin="10dp"
         android:layout_width="match_parent"
@@ -68,6 +47,7 @@
         android:text="推送时间"
         android:textSize="20dp"/>
     <LinearLayout
+        android:id="@+id/ll_set_date"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#fff">
@@ -82,11 +62,11 @@
             android:textSize="20dp"
             />
         <TextView
+            android:id="@+id/tv_set_date"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:text="每日:08:00 - 20:00"/>
+            android:textSize="12dp"/>
     </LinearLayout>
 </LinearLayout>

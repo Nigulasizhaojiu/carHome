@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.example.dllo.carhome.BaseFragment;
 import com.example.dllo.carhome.FindActivity;
 import com.example.dllo.carhome.R;
-import com.example.dllo.find.newcar.NewFragment;
+import com.example.dllo.find.newcar.NewCarFragment;
 import com.example.dllo.find.oldcar.OldFragment;
 
 import java.util.ArrayList;
@@ -42,7 +42,7 @@ public class FindFragment extends BaseFragment{
     @Override
     protected void initData() {
         ArrayList<Fragment>fragments = new ArrayList<>();
-        fragments.add(new NewFragment());
+        fragments.add(new NewCarFragment());
         fragments.add(new OldFragment());
         FindAdapter adapter = new FindAdapter(getChildFragmentManager(),fragments);
         findVp.setAdapter(adapter);

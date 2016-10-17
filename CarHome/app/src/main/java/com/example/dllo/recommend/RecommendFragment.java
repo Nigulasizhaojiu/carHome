@@ -14,6 +14,7 @@ import com.example.dllo.carhome.R;
 import com.example.dllo.recommend.fastnews.FastNewsFragment;
 import com.example.dllo.recommend.goodcreate.GoodCreatedFragment;
 import com.example.dllo.recommend.market.MarketFragment;
+import com.example.dllo.recommend.more.MoreActivity;
 import com.example.dllo.recommend.other.OtherFragment;
 import com.example.dllo.recommend.recommends.RecommendsFragment;
 import com.example.dllo.recommend.say.SayFragment;
@@ -73,6 +74,13 @@ public class RecommendFragment extends BaseFragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), FindActivity.class);
                 startActivity(intent);
+            }
+        });
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), MoreActivity.class);
+                startActivity(i);
             }
         });
     }

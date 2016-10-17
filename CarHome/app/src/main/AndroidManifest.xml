@@ -43,6 +43,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.dllo.recommend.more.MoreActivity"
+            android:theme="@style/custom_title"></activity>
         <activity android:name="com.example.dllo.me.PushActivity"
             android:theme="@style/custom_title"></activity>
         <activity android:name="com.example.dllo.me.SetActivity"

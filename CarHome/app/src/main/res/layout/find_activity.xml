@@ -94,14 +94,14 @@
         <ListView
             android:id="@+id/find_lisrview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:visibility="visible"
             >
         </ListView>
         <ListView
             android:id="@+id/findh_lisrview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:visibility="gone"
             >
         </ListView>

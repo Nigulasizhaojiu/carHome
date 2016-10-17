@@ -16,7 +16,7 @@ public class OldFragment extends BaseFragment {
 
     @Override
     protected int setLayout() {
-        return R.layout.newcar_fragment;
+        return R.layout.oldcar_fragment;
     }
 
     @Override

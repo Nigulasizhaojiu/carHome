@@ -23,7 +23,7 @@ public class AllSelectedActivity extends BaseAty {
 
     private PullToRefreshListView lv;
     private String url;
-    private int num = 0;
+    private int num = 1;
 
 
     @Override

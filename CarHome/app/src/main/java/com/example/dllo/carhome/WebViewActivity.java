@@ -23,7 +23,7 @@ public class WebViewActivity extends BaseAty {
 
     @Override
     protected int setLayout() {
-        return R.layout.wv_activity;
+         return R.layout.wv_activity;
     }
 
     @Override

@@ -244,4 +244,5 @@ public class SelectedFragment extends BaseFragment implements View.OnClickListen
         }
 
     }
+
 }
